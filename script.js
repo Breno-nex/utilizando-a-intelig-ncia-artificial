@@ -10,11 +10,11 @@ const perguntas = [
         "alternativas": [
             {
                 "texto": "O caminho de Pedras",
-                "afirmacao": " ele se adentra pelo caminho feito de pedras, onde ele se depara com um rio"
+                "afirmacao": " ele se adentra pelo caminho feito de pedras, onde ele se depara com um rio,"
             },
             {
                 "texto": "O caminho de terra",
-                "afirmacao": " ele se adentra pelo caminho de terra, onde ele se depara com uma cachoeira"
+                "afirmacao": " ele se adentra pelo caminho de terra, onde ele se depara com uma cachoeira,"
             }
         ]
     },
@@ -53,7 +53,7 @@ const perguntas = [
             },
             {
                 "texto": "Pegar o animal e carnear ele em sua casa",
-                "afirmacao": " Ele pega o animal e leva em sua casa, após isso ele carneia ele para o seu jantar"
+                "afirmacao": " ele pega o animal e leva em sua casa, após isso ele carneia ele para o seu jantar"
             }
         ]
     },
@@ -62,11 +62,11 @@ const perguntas = [
         "alternativas": [
             {
                 "texto": "Faz um molho com a carne",
-                "afirmacao": " Com a carne do animal ele faz um molho e come em seu jantar."
+                "afirmacao": " com a carne do animal ele faz um molho e come em seu jantar."
             },
             {
                 "texto": "Faz um assado com a carne",
-                "afirmacao": " Com a carne ele assa ela e a come em seu jantar."
+                "afirmacao": " com a carne ele assa ela e a come em seu jantar."
             }
         ]
     }
