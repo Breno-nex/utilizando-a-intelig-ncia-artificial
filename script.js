@@ -1,122 +1,115 @@
-const caixaPrincipal=document.querySelector(".caixa-principal");
-const caixaPerguntas=document.querySelector(".caixa-perguntas");
-const caixaAlternativas=document.querySelector(".caixa-alternativas");
-const caixaResultado=document.querySelector(".caixa-resultado");
-const textoResultado=document.querySelector(".texto-resultado");
+const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
-{
-    enunciado: "Certa manhã de uma quinta-feira, um senhor sai a caçada nas profundezas da vasta mata, junto de sua espingarda e facão, ele tem que seguir um caminho, e ele segue no caminho",
-    alternativas:[
-        {
-        texto:"Caminho para o rio",
-        afirmacao:"do rio, ele percorre o caminho até chegar no rio"
-        },
-        {
-       texto:"Caminho para a cachoeira",
-       afirmacao:"da cachoeira, ele segue este caminho até cehgar a cachoeira"
-        }
-
-    ]
-},
-
-{
-    
-        enunciado: "Ele procura um lugar perto das águas para ",
-        alternativas:[{
-            texto:"Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-            afirmacao:"f"
-        },
-        {        
-           texto:"Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-           afirmacao:"f"
-        }        
-        ]
-    },
-    
-
     {
-    
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
-        alternativas:[
+        "enunciado": "Certa manhã um senhor sai a caça com sua espingarda, ele resolve ir pelo meio da floresta, já em certo ponto ele se depara com dois caminhos, ele tem que escolher um caminho. ",
+        "alternativas": [
             {
-            texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-            afirmacao:"f"
+                "texto": "O caminho de Pedras",
+                "afirmacao": " ele se adentra pelo caminho feito de pedras, onde ele se depara com um rio"
             },
             {
-            texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendo a importância de proteger os trabalhadores.",
-            afirmacao:"f"
+                "texto": "O caminho de terra",
+                "afirmacao": " ele se adentra pelo caminho de terra, onde ele se depara com uma cachoeira"
             }
         ]
     },
-    
     {
-    
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
-        alternativas:[
+        "enunciado": "Ele acha a paisagem muito impressionante, cansado de tanto andar ele procura um lugar para descansar",
+        "alternativas": [
             {
-            texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-            afirmacao:"f"
-        },
-        {
-            texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
-            afirmacao:"f"
-        }
-        ]
-    },
-
-    {
-    
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
-        alternativas:[
-            {
-            texto:"Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-            afirmacao:"f"
+                "texto": "Se deitar abaixo de uma árvore",
+                "afirmacao": "  cansado ele se deita em baixo de uma árvore, se deparando com um animal "
             },
-        {
-            texto:"O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-            afirmacao:"f"
-        }
+            {
+                "texto": "Se deitar perto da água",
+                "afirmacao": " cansado ele se deita a beira das águas, se deparando com um animal"
+            }
         ]
     },
+    {
+        "enunciado": "Com a visão ruim ele tenta identificar que animal era",
+        "alternativas": [
+            {
+                "texto": "É uma onça",
+                "afirmacao": " tendo visto que era uma onça ele corre atrás de uma rocha e puxa sua espingarda, engatilha e atira"
+            },
+            {
+                "texto": "É um Biguá",
+                "afirmacao": " tendo visto que era um biguá ele se afasta, engatilha sua espingarda e atira "
+            }
+        ]
+    },
+    {
+        "enunciado": "Com um tiro de sorte ele acerta o animal silvestre, tendo garantido seu jantar porém ele tem que decidir se ele esquarteja o animal no local ou em sua residência",
+        "alternativas": [
+            {
+                "texto": " Pegar o animal e carnear ele no local",
+                "afirmacao": " Ele carneia ele e após isso o leva para casa para preparar o seu jantar"
+            },
+            {
+                "texto": "Pegar o animal e carnear ele em sua casa",
+                "afirmacao": " Ele pega o animal e leva em sua casa, após isso ele carneia ele para o seu jantar"
+            }
+        ]
+    },
+    {
+        "enunciado": "Com a carne do animal ele precisa ver como ele irá preparar a carne para o consumo",
+        "alternativas": [
+            {
+                "texto": "Faz um molho com a carne",
+                "afirmacao": " Com a carne do animal ele faz um molho e come em seu jantar."
+            },
+            {
+                "texto": "Faz um assado com a carne",
+                "afirmacao": " Com a carne ele assa ela e a come em seu jantar."
+            }
+        ]
+    }
 ];
+
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "";
+let historiaFinal = " ";
 
 function mostraPergunta(){
     if (atual >= perguntas.length){
         mostraResultado();
         return;
     }
+
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent = "";
     mostraAlternativas();
-    }
-    
-    function mostraAlternativas(){
+}
+
+function mostraAlternativas(){
     for(const alternativa of perguntaAtual.alternativas){
     const botaoAlternativas = document.createElement("button");
     botaoAlternativas.textContent = alternativa.texto;
-    botaoAlternativas.addEventListener("click",() => respostaSelecionada(alternativa));
+    botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
     caixaAlternativas.appendChild(botaoAlternativas);
-    }
-     }
+   }
 
-     function respostaSelecionada(opcaoSelecionada){
-        const afirmacoes = opcaoSelecionada. afirmacoes;
-        historiaFinal += afirmacoes + "" ;
-        atual++;
-        mostraPergunta();
+}
+function respostaSelecionada(opcaoSelecionada){
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes +"" ;
+    atual++;
+    mostraPergunta();
 
-     }
+}
+function mostraResultado(){
+    caixaPerguntas.textContent = "Dia de caça";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
 
-     function mostraResultado(){
-        caixaPerguntas.textContent = "Em 2049...";
-        textoResultado.textContent = historiaFinal;
-        caixaAlternativas.textContent = "";
-     }
-    
-     mostraPergunta();
+}
+
+mostraPergunta();
