@@ -6,15 +6,15 @@ const textoResultado=document.querySelector(".texto-resultado");
 
 const perguntas = [
 {
-    enunciado: "Certa manhã de uma quinta-feira, um senhor sai a caçada nas profundezas da vasta mata, junto de sua espingarda e facão, ele tem que seguir um caminho",
+    enunciado: "Certa manhã de uma quinta-feira, um senhor sai a caçada nas profundezas da vasta mata, junto de sua espingarda e facão, ele tem que seguir um caminho, e ele segue no caminho",
     alternativas:[
         {
         texto:"Caminho para o rio",
-        afirmacao:"Ele percorre o caminho até chegar no rio"
+        afirmacao:"do rio, ele percorre o caminho até chegar no rio"
         },
         {
        texto:"Caminho para a cachoeira",
-       afirmacao:"Ele segue este caminho até cehgar a cachoeira"
+       afirmacao:"da cachoeira, ele segue este caminho até cehgar a cachoeira"
         }
 
     ]
@@ -25,11 +25,11 @@ const perguntas = [
         enunciado: "Ele procura um lugar perto das águas para ",
         alternativas:[{
             texto:"Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-            afirmacao:"afirmação"
+            afirmacao:"f"
         },
         {        
            texto:"Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-           afirmacao:"afirmação"
+           afirmacao:"f"
         }        
         ]
     },
@@ -41,11 +41,11 @@ const perguntas = [
         alternativas:[
             {
             texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-            afirmacao:"afrimação"
+            afirmacao:"f"
             },
             {
             texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendo a importância de proteger os trabalhadores.",
-            afirmacao:"afirmação"
+            afirmacao:"f"
             }
         ]
     },
@@ -56,11 +56,11 @@ const perguntas = [
         alternativas:[
             {
             texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-            afirmacao:"afirmação"
+            afirmacao:"f"
         },
         {
             texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
-            afirmacao:"afirmação"
+            afirmacao:"f"
         }
         ]
     },
@@ -71,11 +71,11 @@ const perguntas = [
         alternativas:[
             {
             texto:"Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-            afirmacao:"afirmação"
+            afirmacao:"f"
             },
         {
             texto:"O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-            afirmacao:"afirmação"
+            afirmacao:"f"
         }
         ]
     },
