@@ -6,15 +6,15 @@ const textoResultado=document.querySelector(".texto-resultado");
 
 const perguntas = [
 {
-    enunciado: "Certa manhã um senhor",
+    enunciado: "Certa manhã de uma quinta-feira, um senhor sai a caçada nas profundezas da vasta mata, junto de sua espingarda e facão, ele tem que seguir um caminho",
     alternativas:[
         {
-        texto:"Peixe no moio",
-        afirmacao:"afirmação"
+        texto:"Caminho para o rio",
+        afirmacao:"Ele percorre o caminho até chegar no rio"
         },
         {
-       texto:"isso é maravilhoso",
-       afirmacao:"afirmação"
+       texto:"Caminho para a cachoeira",
+       afirmacao:"Ele segue este caminho até cehgar a cachoeira"
         }
 
     ]
@@ -22,7 +22,7 @@ const perguntas = [
 
 {
     
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma",
+        enunciado: "Ele procura um lugar perto das águas para ",
         alternativas:[{
             texto:"Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
             afirmacao:"afirmação"
