@@ -23,11 +23,11 @@ const perguntas = [
         "alternativas": [
             {
                 "texto": "Se deitar abaixo de uma árvore",
-                "afirmacao": "  cansado ele se deita em baixo de uma árvore, se deparando com um animal "
+                "afirmacao": "  cansado ele se deita em baixo de uma árvore, se deparando com um animal,"
             },
             {
                 "texto": "Se deitar perto da água",
-                "afirmacao": " cansado ele se deita a beira das águas, se deparando com um animal"
+                "afirmacao": " cansado ele se deita a beira das águas, se deparando com um animal,"
             }
         ]
     },
@@ -49,7 +49,7 @@ const perguntas = [
         "alternativas": [
             {
                 "texto": " Pegar o animal e carnear ele no local",
-                "afirmacao": " Ele carneia ele e após isso o leva para casa para preparar o seu jantar"
+                "afirmacao": " ele carneia ele e após isso o leva para casa para preparar o seu jantar"
             },
             {
                 "texto": "Pegar o animal e carnear ele em sua casa",
