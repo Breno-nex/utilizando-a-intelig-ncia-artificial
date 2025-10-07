@@ -53,7 +53,7 @@ const perguntas = [
             },
             {
                 "texto": "Pegar o animal e carnear ele em sua casa",
-                "afirmacao": " ele pega o animal e leva em sua casa, após isso ele carneia ele para o seu jantar"
+                "afirmacao": " ele pega o animal e leva em sua casa, após isso ele carneia para o seu jantar"
             }
         ]
     },
