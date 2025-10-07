@@ -19,7 +19,7 @@ const perguntas = [
         ]
     },
     {
-        "enunciado": "Ele acha a paisagem muito impressionante, cansado de tanto andar ele procura um lugar para descansar",
+        "enunciado": "Ele encontra o lugar com uma paisagem muito impressionante, com muita água a disposição, cansado de tanto andar ele procura um lugar para descansar",
         "alternativas": [
             {
                 "texto": "Se deitar abaixo de uma árvore",
